@@ -5,6 +5,7 @@
     <ul class="list-group">
     <li *ngFor="let cose of vett" class="list-group-item text-center" >{{ cose }}</li>
   </ul>
+  <button class="btn btn-primary" (click)="rimuovi()" *ngIf="error1">Rimuovi il tuo annuncio</button>
 </div>
     <label *ngIf="error">Non hai ancora messo nessun annuncio!</label>
     </div>

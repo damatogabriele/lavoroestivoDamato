@@ -67,7 +67,7 @@ for(let i = 0; i < this.ann.length; i++)
       }
 
      }}
-     sport(){this.vett=[null];this.errore=false;
+     sport(){this.vett=[null];
 for(let i = 0; i < this.ann.length; i++)
     {
       if("sport" === this.ann[i].categoria){

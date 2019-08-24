@@ -12,6 +12,7 @@ ann:Annuncio[]=Annunci;
 vett=[];
 num=0;
 error:boolean=false;
+error1:boolean=false;
 vedi(){
     if(this.num<1){
 for(let i = 0; i < this.ann.length; i++)
@@ -23,6 +24,7 @@ for(let i = 0; i < this.ann.length; i++)
           this.vett.push(this.ann[i].categoria)
           this.num++;
           this.error=false;
+          this.error1=true;
       }
 
 }
@@ -31,7 +33,20 @@ this.error=true;
    }
 }
 }
+rimuovi(){
+    if(this.num==1){
+for(let i = 0; i < this.ann.length; i++)
+    {
+      if(this.loggedUser.nome === this.ann[i].nome)
+      {
+          this.ann[i].prodotto="venduto";
+          this.ann[i].descrizione="venduto";
+          this.ann[i].categoria="venduto";
+      }
 
+}
+   }
+}
   constructor() {
 
 
