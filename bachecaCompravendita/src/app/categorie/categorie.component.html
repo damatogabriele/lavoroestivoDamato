@@ -1,0 +1,23 @@
+<div class="div">
+<h4>Filtra per categoria oppure cerca<br>
+<input type="text" class="form-control" #cercasi>
+<button type="button" class="btn btn-primary" (click)="cerca(cercasi.value)">cerca</button>
+<br><br>
+    <div class="btn-group-vertical">
+<button type="button" class="btn btn-primary"  (click)="motori()">Motori</button>
+<button type="button" class="btn btn-primary" (click)="gioielli()">Gioielli</button>
+<button type="button" class="btn btn-primary" (click)="case()">Case</button>
+<button type="button" class="btn btn-primary" (click)="elettronica()">Elettronica</button>
+<button type="button" class="btn btn-primary" (click)="animali()">Animali</button>
+<button type="button" class="btn btn-primary" (click)="sport()">Sport</button>
+</div>
+</h4>
+</div>
+<div class="ciao">
+    
+    <ul class="list-group">
+    <li *ngFor="let cose of vett" class="list-group-item text-center" >{{ cose }}</li>
+</ul>
+
+
+</div>

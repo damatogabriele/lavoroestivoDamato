@@ -1,0 +1,12 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+.divtuoi{
+    background-color:rgba(0, 153, 255, 0.404);
+ width: 400px;
+  border: 10px solid blue;
+  position:absolute;
+  left: 1450px;;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  top:400px;
+}

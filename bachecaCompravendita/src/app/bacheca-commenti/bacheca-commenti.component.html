@@ -1,0 +1,27 @@
+<h4><h4 class="ann">Annunci</h4>
+<button class="btn btn-primary" *ngIf="loggedUser" (click)="triggerNewPostForm()">Pubblica nuovo post</button>
+<div *ngIf="postFormShow">
+
+  <form [formGroup]="com" (ngSubmit)="addAnnuncio()" class="jumbotron bache">
+
+    Prodotto:<input class="form-control nuovoPostInput" [formControl]="com.controls['prodotto']">
+    Descrizione:  <input class="form-control nuovoPostInput" [formControl]="com.controls['descrizione']">
+    Commento:  <input class="form-control nuovoPostInput" [formControl]="com.controls['commento']">
+    Categoria:  <input class="form-control nuovoPostInput" [formControl]="com.controls['categoria']">
+    <button class="btn btn-primary" type="submit">Aggiungi</button>
+  </form>
+</div>
+<div>
+ <ul class="list-group">
+    <li *ngFor="let Annuncio of Ann" class="list-group-item text-center" >
+    <h4>{{"Prodotto: "+Annuncio.prodotto}}</h4>
+    <p>{{"Nome: "+Annuncio.nome}}</p>
+  <p>   {{"Descrizione: "+Annuncio.descrizione}}</p>
+  <p>{{"Commento: "+Annuncio.commento}}</p>
+  <p>   {{"Categoria: "+Annuncio.categoria}}</p>
+  </li>
+  </ul>
+
+</div>
+
+</h4>

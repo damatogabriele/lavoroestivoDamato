@@ -1,0 +1,10 @@
+<div class="divtuoi">
+    <button class="btn btn-primary" (click)="vedi()">Guarda i tuoi annunci</button>
+
+    <div class="ciao">
+    <ul class="list-group">
+    <li *ngFor="let cose of vett" class="list-group-item text-center" >{{ cose }}</li>
+  </ul>
+</div>
+    <label *ngIf="error">Non hai ancora messo nessun annuncio!</label>
+    </div>

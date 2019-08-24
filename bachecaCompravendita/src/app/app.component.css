@@ -1,0 +1,43 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.divreg{
+    position:absolute;
+background-color:rgba(0, 153, 255, 0.404);
+ width: 400px;
+  border: 10px solid blue;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+.divelenco{
+background-color:rgba(0, 153, 255, 0.404);
+ width: 400px;
+  border: 10px solid blue;
+  position:absolute;
+  left:500px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+.divbache{
+    background-color:rgba(0, 153, 255, 0.404);
+ width: 400px;
+  border: 10px solid blue;
+  position:absolute;
+  left: 980px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+.divcate{
+    background-color:rgba(0, 153, 255, 0.404);
+ width: 400px;
+  border: 10px solid blue;
+  position:absolute;
+  left: 500px;;
+  padding: 30px;
+  margin: 20px;
+  top:600px;
+  text-align: center;
+}
+

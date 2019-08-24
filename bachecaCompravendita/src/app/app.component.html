@@ -1,0 +1,28 @@
+
+ <div class="container-fluid">
+    <button class="btn btn-primary" *ngIf="!loggedUser" (click)="triggerLogin()">Login</button>
+
+    <button class="btn btn-primary" *ngIf="loggedUser" (click)="logout()">Logout</button>
+
+<div class="divreg">
+ <app-registrazione *ngIf="!showtuoi" [lista] ="ut"></app-registrazione>
+ </div>
+
+ <div class="divelenco">
+<app-elenco [lista]="ut"></app-elenco>
+
+
+ </div>
+ <div class="divlogin">
+ <app-login *ngIf="showLogin && !loggedUser" (userLogin)="setUtenteLoggato($event)" [loggedUser]="loggedUser" [lista]="ut"></app-login>
+  </div>
+<div class="divtuoi">
+      <app-tuoiogg *ngIf="showtuoi" [loggedUser]="loggedUser" ></app-tuoiogg>
+  </div>
+  <div class=" divbache">
+    <app-bacheca-commenti [loggedUser]="loggedUser"></app-bacheca-commenti>
+</div>
+  <div class="divcate">
+      <app-categorie></app-categorie>
+  </div>
+</div>
